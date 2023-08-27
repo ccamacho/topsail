@@ -75,7 +75,11 @@
     set_fact:
       first_machineset: "{{ oc_get_machinesets.stdout_lines[0] }}"
 
+<<<<<<< HEAD
   - name: Set the replicas of the first {{ machineset_instance_type + 'machineset (' + first_machineset + ') to ' + scale | string }}
+=======
+  - name: Set the replicas of the first {{ machineset_instance_type + 'machineset (' + first_machineset + ') to ' + scale }}
+>>>>>>> 8c9be3ae (testing: lints partial fixes)
     command: >
       oc patch machineset -n openshift-machine-api {{ first_machineset }}
       --patch '{"spec": {"replicas": {{ scale }} }}' --type merge

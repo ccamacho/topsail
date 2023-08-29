@@ -40,7 +40,7 @@ def _generate_config(component):
     print(f"{component.__qualname__}\n- generating {dest} ...\n")
 
     with open(dest, "w") as f:
-        print("# Auto-generated file, do not edit manually ... ", file=f)
+        print("# Auto-generated file, do not edit manually ...", file=f)
         print(f"# Toolbox generate command: {' '.join(sys.argv[1:])}", file=f)
         print(f"# Source component: {component.__qualname__}", file=f)
         print("", file=f)

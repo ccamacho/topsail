@@ -14,7 +14,7 @@ echo "TOTAL_REQUESTS: ${TOTAL_REQUESTS}"
 echo "PROMPT: ${PROMPT}"
 echo "CONTEXT: ${CONTEXT}"
 
-cd /etc/protos 
+cd /etc/protos
 
 ghz --insecure --proto ./wisdomextservice.proto \
   --call caikit.runtime.WisdomExt.WisdomExtService/CodeGenerationTaskPredict \

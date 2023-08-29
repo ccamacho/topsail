@@ -14,7 +14,7 @@ make_pod_config = ""
 test_pod_config = ""
 pod_configs = {}
 with open("roles/load_aware/load_aware_scale_test/files/coreutils-make-pod.yaml", "r") as f:
-    pod_configs["make"] = f.read() 
+    pod_configs["make"] = f.read()
 
 with open("roles/load_aware/load_aware_scale_test/files/coreutils-test-pod.yaml", "r") as f:
     pod_configs["test"] = f.read()

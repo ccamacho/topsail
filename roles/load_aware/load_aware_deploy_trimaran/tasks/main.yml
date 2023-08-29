@@ -50,7 +50,7 @@
   register: token_size
   delay: 2
   retries: 30
-  until: token_size.stdout | int > 1000 
+  until: token_size.stdout | int > 1000
 
 - name: Create the src artifacts directory
   file:
@@ -68,7 +68,7 @@
     dest: "{{ trimaran_setup_config }}"
 
 - name: Deploy Trimaran scheduler
-  shell: | 
+  shell: |
     set -o errexit;
     set -o pipefail;
     set -o nounset;

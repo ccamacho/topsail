@@ -18,5 +18,5 @@
     dest: "{{ trimaran_setup_config }}"
 
 - name: Delete Trimaran resources
-  command: 
+  command:
     oc delete -f {{ trimaran_setup_config }} --ignore-not-found

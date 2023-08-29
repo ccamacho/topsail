@@ -8,7 +8,7 @@
   register: has_notebooks_crd
   failed_when: false
 
-- name: Count the notebooks in the namespace {{ rhods_notebook_namespace }} 
+- name: Count the notebooks in the namespace {{ rhods_notebook_namespace }}
   environment:
     KUBECONFIG: '{{ sut_cluster_kubeconfig }}'
   shell:
